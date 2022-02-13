@@ -1,3 +1,5 @@
+package FunctionalTest;
+
 import java.util.function.Function;
 
 public class CheckBlank implements Function<String, Boolean> {
