@@ -6,7 +6,7 @@ import java.util.function.Function;
 
 @Component
 public class RuleEngine {
-    public void executeRule(Function<String, Boolean> rule, String value){
-        System.out.println(rule.apply(value));
+    public <T> void executeRule(Function<T, Boolean> rule, String value){
+        System.out.println(rule.apply((T) value));
     }
 }
